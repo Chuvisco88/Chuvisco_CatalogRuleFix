@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Chuvisco_CatalogRuleFix>
+            <version>1.0.0</version>
+        </Chuvisco_CatalogRuleFix>
+    </modules>
+    <global>
+        <models>
+            <catalogrule>
+                <rewrite>
+                    <action_index_refresh>Chuvisco_CatalogRuleFix_Model_Action_Index_Refresh</action_index_refresh>
+                </rewrite>
+            </catalogrule>
+        </models>
+    </global>
+    <crontab>
+    <jobs>
+        <catalogrule_apply_all>
+            <schedule>
+                <cron_expr>0 0 * * *</cron_expr>
+            </schedule>
+            <run>
+                <model>catalogrule/observer::dailyCatalogUpdate</model>
+            </run>
+        </catalogrule_apply_all>
+    </jobs>
+</config>
