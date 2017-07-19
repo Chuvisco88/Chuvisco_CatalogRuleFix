@@ -1,1 +1,1 @@
-# CatalogRuleFix
+# Chuvisco_CatalogRuleFix
