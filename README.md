@@ -4,6 +4,7 @@ The CatalogRuleFix overrides Magento's default behaviour of the CatalogRule inde
 Following two things are overridden:
 - The cronjob for catalogrule_apply_all is `0 0 * * *` instead of `0 1 * * *`
 - The index refresher uses local time instead of gmt time
+- Inserting of rules by the resource model uses local time instead of gmt time
 
 ## Installation
 **NOTE:** Running Chuvisco_CatalogRuleFix requires you to run the cronjobs of Magento. If they are not set up, please 
