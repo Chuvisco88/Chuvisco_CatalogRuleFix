@@ -15,14 +15,15 @@
         </models>
     </global>
     <crontab>
-    <jobs>
-        <catalogrule_apply_all>
-            <schedule>
-                <cron_expr>0 0 * * *</cron_expr>
-            </schedule>
-            <run>
-                <model>catalogrule/observer::dailyCatalogUpdate</model>
-            </run>
-        </catalogrule_apply_all>
-    </jobs>
+        <jobs>
+            <catalogrule_apply_all>
+                <schedule>
+                    <cron_expr>0 0 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>catalogrule/observer::dailyCatalogUpdate</model>
+                </run>
+            </catalogrule_apply_all>
+        </jobs>
+    </crontab>
 </config>
