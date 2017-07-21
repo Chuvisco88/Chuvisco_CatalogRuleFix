@@ -14,6 +14,10 @@ do so by following the [docs](http://devdocs.magento.com/guides/m1x/install/inst
  
  Currently installation via composer or Magento Connect is not supported.
 
+## Changelog
+
+The changelog is [in another castle](CHANGELOG.md).
+
 ## Roadmap
 - Composer and Modman integration
 - Tests and TravisCI integration
