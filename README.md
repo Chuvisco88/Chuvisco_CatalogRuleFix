@@ -10,16 +10,39 @@ Following two things are overridden:
 **NOTE:** Running Chuvisco_CatalogRuleFix requires you to run the cronjobs of Magento. If they are not set up, please 
 do so by following the [docs](http://devdocs.magento.com/guides/m1x/install/installing_install.html#install-cron).
 
+This module can be installed in various ways: via modman, Composer or manually.
+Currently installation via Magento Connect is not supported.
+
+#### Modman
+
+1. Install [modman](https://github.com/colinmollenhour/modman)
+2. Execute the following command from your Magento installation folder:
+```sh
+modman clone https://github.com/Chuvisco88/Chuvisco_CatalogRuleFix.git
+```
+
+### Composer
+
+1. Install [Composer](http://getcomposer.org/download/)
+2. Install [Magento Composer](https://github.com/magento-hackathon/magento-composer-installer)
+3. Add the repository to the Composer configuration of your project:
+```sh
+composer config repositories.catalogrulefix vcs https://github.com/Chuvisco88/Chuvisco_CatalogRuleFix.git
+```
+4. Add the package to the Composer configuration of your project:
+```sh
+composer require "chuvisco/catalog-rule-fix"
+```
+
+### Manually
+
 [Download the zip or tar.gz file](https://github.com/Chuvisco88/Chuvisco_CatalogRuleFix/releases) and extract it into your project webroot.
  
- Currently installation via composer or Magento Connect is not supported.
-
 ## Changelog
 
 The changelog is [in another castle](CHANGELOG.md).
 
 ## Roadmap
-- Composer and Modman integration
 - Tests and TravisCI integration
 - Magento Connect integration
 

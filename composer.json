@@ -1,0 +1,14 @@
+{
+    "name": "chuvisco/catalog-rule-fix",
+    "description": "Fix timezone issues in the Mage_CatalogRule module.",
+    "type": "magento-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian Schweizer"
+        }
+    ],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "Allows to manage this package as a dependency"
+    }
+}
