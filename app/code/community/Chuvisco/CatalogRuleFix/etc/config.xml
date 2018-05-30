@@ -10,9 +10,13 @@
             <catalogrule>
                 <rewrite>
                     <action_index_refresh>Chuvisco_CatalogRuleFix_Model_Action_Index_Refresh</action_index_refresh>
-                    <resource_rule>Chuvisco_CatalogRuleFix_Model_Resource_Rule</resource_rule>
                 </rewrite>
             </catalogrule>
+            <catalogrule_resource>
+                <rewrite>
+                    <rule>Chuvisco_CatalogRuleFix_Model_Resource_Rule</rule>
+                </rewrite>
+            </catalogrule_resource>
         </models>
     </global>
     <crontab>
